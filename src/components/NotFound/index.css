@@ -1,0 +1,76 @@
+/* Write your CSS here */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.not-found-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.not-found-responsive-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 90%;
+}
+
+.not-found-img {
+  width: 328px;
+}
+
+.heading {
+  font-family: 'roboto';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #334155;
+  margin: 0px;
+  margin-top: 32px;
+}
+
+.description {
+  font-family: 'roboto';
+  font-size: 16px;
+  line-height: 1.75;
+  color: #64748b;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .not-found-content-container {
+    align-items: flex-start;
+    margin-top: 60px;
+  }
+
+  .not-found-responsive-container {
+    margin-top: 60px;
+    max-width: 458px;
+  }
+
+  .not-found-img {
+    width: 475px;
+  }
+
+  .description {
+    font-size: 12px;
+    line-height: 1.33;
+    text-align: center;
+    width: 241px;
+    margin-top: 6px;
+  }
+}

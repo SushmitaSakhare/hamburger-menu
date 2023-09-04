@@ -1,0 +1,36 @@
+/* Write your CSS here */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.about-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin-top: 6px;
+}
+
+.mobile-about-img {
+  width: 80%;
+  max-width: 468px;
+}
+
+.desktop-about-img {
+  width: 100%;
+  max-width: 1110px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-about-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-about-img {
+    display: none;
+  }
+}
